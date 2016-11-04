@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="username_profile">Fathia Azzahra</string>
+    <string name="no_hp">08112229272</string>
+    <string name="email">fathiaa1103@gmail.com</string>
+    <string name="app_name">Login</string>
+    <string name="hint_username">Fathia</string>
+    <string name="hint_Pria">Pria</string>
+    <string name="hint_wanita">Wanita</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_codelabs">Saya merupakan anggota Codelabs</string>
+</resources>

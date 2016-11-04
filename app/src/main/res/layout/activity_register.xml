@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.fathia.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/masukan_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/logo"
+        android:textColorHint="@color/colorAccent"
+        android:backgroundTint="@color/color_pink"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/masukan_nama">
+
+    <RadioButton
+        android:id="@+id/gender_pria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorAccent"
+        android:hint="@string/hint_Pria"
+        android:buttonTint="@color/color_pink"
+
+
+        />
+
+        <RadioButton
+            android:id="@+id/gender_wanita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gender_pria"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColorHint="@color/colorAccent"
+            android:hint="@string/hint_wanita"
+            android:buttonTint="@color/color_pink"
+            android:checked="true"
+            />
+
+        <EditText
+            android:id="@+id/masukan_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_pria"
+            android:hint="@string/hint_email"
+            android:inputType="text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/masukan_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/masukan_email"
+            android:hint="@string/hint_password"
+            android:inputType="text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorAccent" />
+
+
+         <CheckBox
+             android:id="@+id/pilihan_setuju"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:layout_below="@+id/masukan_password"
+             android:textColorHint="@color/colorAccent"
+             android:hint="@string/hint_codelabs"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            android:hint="REGISTER"
+            android:layout_below="@+id/pilihan_setuju"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            android:background="@color/registerBox"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
